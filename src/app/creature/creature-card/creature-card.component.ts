@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './creature-card.component.html',
   styleUrls: ['./creature-card.component.scss'],
 })
-export class CreatureCardComponent {}
+export class CreatureCardComponent {
+  creature: any = {
+    id: 1,
+    name: 'Toby',
+    family: 'fire',
+    strength: 100,
+  };
+}

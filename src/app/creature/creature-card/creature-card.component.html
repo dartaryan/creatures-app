@@ -1,1 +1,18 @@
-<p>creature-card works!</p>
+<div class="card-columns">
+  <div class="card shadow-sm">
+    <img
+      class="card-img-top"
+      src="assets\creature_default.png"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ creature.name }}</h5>
+      <p class="card-text">
+        {{ creature.family }}
+      </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">{{ creature.strength }}</small>
+    </div>
+  </div>
+</div>
