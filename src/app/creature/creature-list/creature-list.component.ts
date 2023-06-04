@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { CreaturesService } from 'src/app/services/creatures.service';
+import { Creature } from '../creature.interface';
 
 @Component({
   selector: 'app-creature-list',
@@ -7,18 +9,11 @@ import { CreaturesService } from 'src/app/services/creatures.service';
   styleUrls: ['./creature-list.component.scss'],
 })
 export class CreatureListComponent implements OnInit {
-  creatures: any;
+  creatures$: Observable<Creature[]> = new Observable();
 
   constructor(private creaturesService: CreaturesService) {}
 
   ngOnInit(): void {
-    this.creaturesService.getCreatures().subscribe(
-      (data) => {
-        this.creatures = data;
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    this.creatures$ = this.creaturesService.getCreatures();
   }
 }

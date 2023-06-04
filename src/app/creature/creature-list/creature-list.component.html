@@ -1,5 +1,7 @@
-<div class="card-columns">
-  <div *ngFor="let creature of creatures">
-    <app-creature-card [creature]="creature"></app-creature-card>
+
+  <div class="card-columns mt-10">
+    <div *ngFor="let creature of creatures$ | async">
+      <app-creature-card [creature]="creature"></app-creature-card>
+    </div>
   </div>
-</div>
+

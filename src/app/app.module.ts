@@ -7,6 +7,8 @@ import { CreatureListComponent } from './creature/creature-list/creature-list.co
 import { CreatureCardComponent } from './creature/creature-card/creature-card.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CreaturesService } from './services/creatures.service';
+import { AddCreatureComponent } from './creature/add-creature/add-creature.component';
+import { CreatureDetailsComponent } from './creature/creature-details/creature-details.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { CreaturesService } from './services/creatures.service';
     CreatureCardComponent,
     CreatureListComponent,
     NavBarComponent,
+    AddCreatureComponent,
+    CreatureDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [CreaturesService],
