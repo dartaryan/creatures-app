@@ -1,0 +1,14 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+.search-btn {
+  color: $purple;
+  border-color: $purple;
+}
+
+.search-btn:hover {
+  color: $light;
+  border-color: $purple;
+  background-color: $purple;
+}

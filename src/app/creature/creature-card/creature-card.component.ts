@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Creature, CreatureFamily } from '../creature.interface';
 
 @Component({
   selector: 'app-creature-card',
@@ -6,10 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./creature-card.component.scss'],
 })
 export class CreatureCardComponent {
-  creature: any = {
-    id: 1,
-    name: 'Toby',
-    family: 'fire',
-    strength: 100,
+  @Input() creature: Creature = {
+    id: 0,
+    name: '',
+    family: CreatureFamily.fire,
+    strength: 0,
   };
 }

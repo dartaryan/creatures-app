@@ -1,1 +1,5 @@
-<p>creature-list works!</p>
+<div class="card-columns">
+  <div *ngFor="let creature of creatures">
+    <app-creature-card [creature]="creature"></app-creature-card>
+  </div>
+</div>
