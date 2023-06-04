@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddCreatureComponent } from './creature/add-creature/add-creature.component';
 import { CreatureListComponent } from './creature/creature-list/creature-list.component';
 import { CreatureDetailsComponent } from './creature/creature-details/creature-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: CreatureListComponent, pathMatch: 'full' },
@@ -21,6 +22,10 @@ const routes: Routes = [
     path: 'creature-details/:id',
     component: CreatureDetailsComponent,
     pathMatch: 'full',
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ];
 

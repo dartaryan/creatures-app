@@ -1,0 +1,14 @@
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+.next-back-btn {
+  color: $purple;
+  border-color: $purple;
+}
+
+.next-back-bt n:hover {
+  color: $light;
+  border-color: $purple;
+  background-color: $purple;
+}

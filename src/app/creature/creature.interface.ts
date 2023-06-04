@@ -3,6 +3,7 @@ export interface Creature {
   name: string;
   family: CreatureFamily;
   strength: number;
+  state: CreatureState;
 }
 
 export enum CreatureFamily {
@@ -12,4 +13,9 @@ export enum CreatureFamily {
   wind = 'wind',
   light = 'light',
   dark = 'dark',
+}
+
+export enum CreatureState {
+  adopt = 'adopt',
+  exchange = 'exchange',
 }

@@ -9,6 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CreaturesService } from './services/creatures.service';
 import { AddCreatureComponent } from './creature/add-creature/add-creature.component';
 import { CreatureDetailsComponent } from './creature/creature-details/creature-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CreatureDetailsComponent } from './creature/creature-details/creature-d
     NavBarComponent,
     AddCreatureComponent,
     CreatureDetailsComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [CreaturesService],

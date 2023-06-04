@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Creature, CreatureFamily } from '../creature.interface';
+import { Creature, CreatureFamily, CreatureState } from '../creature.interface';
 
 @Component({
   selector: 'app-creature-card',
@@ -12,5 +12,6 @@ export class CreatureCardComponent {
     name: '',
     family: CreatureFamily.fire,
     strength: 0,
+    state: CreatureState.adopt,
   };
 }

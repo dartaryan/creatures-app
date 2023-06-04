@@ -1,3 +1,11 @@
-<p>creature-details works!
-    selected id is {{creatureId}}
-</p>
+<p>creature-details works! selected id is {{ creatureId }}</p>
+<button
+  type="button"
+  class="btn next-back-btn m-2"
+  (click)="onSelectPrevious()"
+>
+  <i class="bi bi-caret-left-square-fill"></i>
+</button>
+<button type="button" class="btn next-back-btn m-2" (click)="onSelectNext()">
+  <i class="bi bi-caret-right-square-fill"></i>
+</button>

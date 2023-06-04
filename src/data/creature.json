@@ -1,12 +1,128 @@
 [
-  { "id": 1, "name": "Fluffy", "family": "fire", "strength": 200 },
-  { "id": 2, "name": "Bubbles", "family": "water", "strength": 500 },
-  { "id": 3, "name": "Rocky", "family": "earth", "strength": 800 },
-  { "id": 4, "name": "Zephyr", "family": "wind", "strength": 300 },
-  { "id": 5, "name": "Sparkle", "family": "light", "strength": 1000 },
-  { "id": 6, "name": "Midnight", "family": "dark", "strength": 1200 },
-  { "id": 7, "name": "Ember", "family": "fire", "strength": 150 },
-  { "id": 8, "name": "Splash", "family": "water", "strength": 700 },
-  { "id": 9, "name": "Pebble", "family": "earth", "strength": 400 },
-  { "id": 10, "name": "Zephyrus", "family": "wind", "strength": 900 }
+  {
+    "id": 1,
+    "name": "Fluffy",
+    "family": "fire",
+    "strength": 200,
+    "state": "exchange"
+  },
+  {
+    "id": 2,
+    "name": "Bubbles",
+    "family": "water",
+    "strength": 500,
+    "state": "adopt"
+  },
+  {
+    "id": 3,
+    "name": "Rocky",
+    "family": "earth",
+    "strength": 800,
+    "state": "exchange"
+  },
+  {
+    "id": 4,
+    "name": "Zephyr",
+    "family": "wind",
+    "strength": 300,
+    "state": "adopt"
+  },
+  {
+    "id": 5,
+    "name": "Sparkle",
+    "family": "light",
+    "strength": 1000,
+    "state": "adopt"
+  },
+  {
+    "id": 6,
+    "name": "Midnight",
+    "family": "dark",
+    "strength": 1200,
+    "state": "exchange"
+  },
+  {
+    "id": 7,
+    "name": "Ember",
+    "family": "fire",
+    "strength": 150,
+    "state": "adopt"
+  },
+  {
+    "id": 8,
+    "name": "Splash",
+    "family": "water",
+    "strength": 700,
+    "state": "exchange"
+  },
+  {
+    "id": 9,
+    "name": "Pebble",
+    "family": "earth",
+    "strength": 400,
+    "state": "adopt"
+  },
+  {
+    "id": 10,
+    "name": "Zephyrus",
+    "family": "wind",
+    "strength": 900,
+    "state": "exchange"
+  },
+  {
+    "id": 11,
+    "name": "Blaze",
+    "family": "fire",
+    "strength": 600,
+    "state": "exchange"
+  },
+  {
+    "id": 12,
+    "name": "Surge",
+    "family": "water",
+    "strength": 450,
+    "state": "adopt"
+  },
+  {
+    "id": 13,
+    "name": "Terra",
+    "family": "earth",
+    "strength": 700,
+    "state": "exchange"
+  },
+  {
+    "id": 14,
+    "name": "Gust",
+    "family": "wind",
+    "strength": 250,
+    "state": "adopt"
+  },
+  {
+    "id": 15,
+    "name": "Radiant",
+    "family": "light",
+    "strength": 800,
+    "state": "adopt"
+  },
+  {
+    "id": 16,
+    "name": "Shadow",
+    "family": "dark",
+    "strength": 1100,
+    "state": "exchange"
+  },
+  {
+    "id": 17,
+    "name": "Inferno",
+    "family": "fire",
+    "strength": 300,
+    "state": "adopt"
+  },
+  {
+    "id": 18,
+    "name": "Aqua",
+    "family": "water",
+    "strength": 650,
+    "state": "exchange"
+  }
 ]
