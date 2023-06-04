@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Fluffy", "family": "fire", "strength": 200 },
+  { "id": 2, "name": "Bubbles", "family": "water", "strength": 500 },
+  { "id": 3, "name": "Rocky", "family": "earth", "strength": 800 },
+  { "id": 4, "name": "Zephyr", "family": "wind", "strength": 300 },
+  { "id": 5, "name": "Sparkle", "family": "light", "strength": 1000 },
+  { "id": 6, "name": "Midnight", "family": "dark", "strength": 1200 },
+  { "id": 7, "name": "Ember", "family": "fire", "strength": 150 },
+  { "id": 8, "name": "Splash", "family": "water", "strength": 700 },
+  { "id": 9, "name": "Pebble", "family": "earth", "strength": 400 },
+  { "id": 10, "name": "Zephyrus", "family": "wind", "strength": 900 }
+]
