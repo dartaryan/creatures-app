@@ -1,27 +1,33 @@
-<div class="card text-white bg-dark text-center shadow-lg">
-  <div class="img-wrapper position-relative overflow-hidden rounded-top m-2">
-    <img class="card-img-top" src="assets\creature_default.png" />
-    <div class="text-center member-icons position-absolute animate">
-      <button type="button" class="btn btn-dark m-2">
-        <i class="bi bi-pencil-square"></i>
-      </button>
-      <button
-        type="button"
-        routerLink="/creature-details/{{ creature.id }}"
-        class="btn btn-dark m-2"
-      >
-        <i class="bi bi-person-lines-fill"></i>
-      </button>
+<div class="col">
+  <div class="card text-white bg-dark text-center shadow-lg m-2">
+    <div class="img-wrapper position-relative overflow-hidden rounded-top">
+      <img
+        class="card-img-top"
+        src="../../../assets/creatures-photos/{{ creature.id }}.png"
+      />
+      <div class="text-center member-icons position-absolute animate">
+        <button type="button" class="btn btn-dark m-2">
+          <i class="bi bi-pencil-square"></i>
+        </button>
+        <button
+          type="button"
+          routerLink="/creature-details/{{ creature.id }}"
+          class="btn btn-dark m-2"
+        >
+          <i class="bi bi-person-lines-fill"></i>
+        </button>
+      </div>
     </div>
-  </div>
-
-  <div class="card-body">
-    <h5 class="card-title">{{ creature.name }}</h5>
-    <p class="card-text">
-      {{ creature.family }}
-    </p>
-  </div>
-  <div class="card-footer border-light">
-    <small>{{ creature.strength }}<i class="bi bi-lightning-charge"></i></small>
+    <div class="card-body">
+      <h5 class="card-title">{{ creature.name }}</h5>
+      <p class="card-text">
+        {{ creature.family }}
+      </p>
+    </div>
+    <div class="card-footer border-light">
+      <small>
+        {{ creature.strength }}<i class="bi bi-lightning-charge"></i>
+      </small>
+    </div>
   </div>
 </div>

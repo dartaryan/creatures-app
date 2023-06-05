@@ -3,19 +3,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddCreatureComponent } from './creature/add-creature/add-creature.component';
 import { CreatureListComponent } from './creature/creature-list/creature-list.component';
 import { CreatureDetailsComponent } from './creature/creature-details/creature-details.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './utils/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: CreatureListComponent, pathMatch: 'full' },
   { path: 'add-creature', component: AddCreatureComponent, pathMatch: 'full' },
   {
     path: 'exchange-creature',
-    component: AddCreatureComponent,
+    component: CreatureListComponent,
     pathMatch: 'full',
   },
   {
     path: 'adopt-creature',
-    component: AddCreatureComponent,
+    component: CreatureListComponent,
     pathMatch: 'full',
   },
   {

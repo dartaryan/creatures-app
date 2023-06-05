@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, filter, map } from 'rxjs';
 import { CreaturesService } from 'src/app/services/creatures.service';
-import { Creature } from '../creature.interface';
+import { Creature, CreatureState } from '../creature.interface';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-creature-list',
@@ -9,11 +10,28 @@ import { Creature } from '../creature.interface';
   styleUrls: ['./creature-list.component.scss'],
 })
 export class CreatureListComponent implements OnInit {
-  creatures$: Observable<Creature[]> = new Observable();
+  creatureState: CreatureState = CreatureState.exchange;
+  creatures$: Observable<Creature[]> | null = null;
 
-  constructor(private creaturesService: CreaturesService) {}
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private creaturesService: CreaturesService
+  ) {}
 
   ngOnInit(): void {
-    this.creatures$ = this.creaturesService.getCreatures();
+    this.creatureState = this.activatedRoute.snapshot.url
+      .toString()
+      .includes('adopt')
+      ? CreatureState.adopt
+      : CreatureState.exchange;
+    console.log(this.activatedRoute.snapshot.url.toString());
+
+    this.creatures$ = this.creaturesService.getCreatures().pipe(
+      map((data) => {
+        return data.filter((creature: Creature) => {
+          return creature.state === this.creatureState;
+        });
+      })
+    );
   }
 }
